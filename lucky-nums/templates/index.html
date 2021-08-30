@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+  <title>LuckyNum</title>
+  <script src="https://unpkg.com/jquery"></script>
+</head>
+<body>
+
+<form id="lucky-form">
+  <div>Name: <input id="name"> <b id="name-err">{{errors['name']}}</b> </div>
+  <div>Birth Year: <input id="year"> <b id="year-err">{{errors['year']}}</b> </div>
+  <div>Email: <input id="email"> <b id="email-err">{{errors['email']}}</b> </div>
+  <div>Color: <input id="color"> <b id="color-err">{{errors['color']}}</b> </div>
+  <button>I Want To Feel Lucky!</button>
+</form>
+
+<div id="lucky-results">Your lucky num is {{result['num']['num']}}{{result['num']['fact']}}<br>Your birth year {{result['year']['year']}} fact is {{result['year']['fact']}}</div>
+
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="/static/lucky.js"></script>
+</body>
+</html>
